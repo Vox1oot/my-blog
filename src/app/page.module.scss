@@ -1,0 +1,51 @@
+@import '/src/styles/variables.scss';
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+%item {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text {
+    @extend %item;
+}
+
+.title {
+    font-size: 72px;
+    background: linear-gradient(to bottom, $color-dark-green, $color-grey);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero {
+    @extend %item;
+}
+
+.img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.description {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: $color-green;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    color: $color-white;
+}

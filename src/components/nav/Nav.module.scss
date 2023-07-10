@@ -1,0 +1,27 @@
+@import '/src/styles/variables.scss';
+
+.container {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.links {
+    display: flex;
+    gap: 20px
+}
+
+.logout {
+    padding: 5px;
+    border: none;
+    background-color: $color-green;
+    color: $color-white;
+    cursor: pointer;
+    border-radius: 3px;
+}
