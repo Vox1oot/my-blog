@@ -1,13 +1,9 @@
-@import '/src/styles/variables.scss';
-
-.container {
-
-}
+@import '/src/styles/variables';
 
 .imgContainer {
+    position: relative;
     width: 100%;
     height: 300px;
-    position: relative;
 }
 
 .img {
@@ -19,9 +15,9 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: $color-green;
     padding: 5px;
     color: $color-white;
+    background-color: $color-green;
 }
 
 .textContainer {
@@ -31,14 +27,14 @@
 }
 
 .item {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 50px;
 }
 
 .description {
-    font-size: 18px;
     font-weight: 300;
+    font-size: 18px;
     text-align: justify;
 }

@@ -1,11 +1,11 @@
-@import 'src/styles/variables.scss';
+@import 'src/styles/variables';
 
 .button {
+    width: max-content;
     padding: 20px;
-    cursor: pointer;
+    color: $color-white;
     background-color: $color-green;
     border: none;
     border-radius: 5px;
-    width: max-content;
-    color: $color-white;
+    cursor: pointer;
 }

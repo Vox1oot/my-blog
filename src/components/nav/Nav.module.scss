@@ -1,10 +1,10 @@
-@import '/src/styles/variables.scss';
+@import '/src/styles/variables';
 
 .container {
     display: flex;
-    height: 100px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    height: 100px;
 }
 
 .logo {
@@ -19,9 +19,9 @@
 
 .logout {
     padding: 5px;
-    border: none;
-    background-color: $color-green;
     color: $color-white;
-    cursor: pointer;
+    background-color: $color-green;
+    border: none;
     border-radius: 3px;
+    cursor: pointer;
 }

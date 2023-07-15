@@ -1,14 +1,14 @@
-@import '/src/styles/variables.scss';
+@import '/src/styles/variables';
 
 .container {
     display: flex;
-    align-items: center;
     gap: 100px;
+    align-items: center;
 }
 
 %item {
-    flex: 1 1;
     display: flex;
+    flex: 1 1;
     flex-direction: column;
     gap: 50px;
 }
@@ -20,7 +20,6 @@
 .title {
     font-size: 72px;
     background: linear-gradient(to bottom, $color-dark-green, $color-grey);
-    background-clip: content-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,22 +39,23 @@
     from {
         transform: translateY(-10px);
     }
+
     to {
         transform: translateY(10px);
     }
 }
 
 .description {
-    font-size: 24px;
     font-weight: 300;
+    font-size: 24px;
 }
 
 .button {
+    width: max-content;
     padding: 20px;
-    cursor: pointer;
+    color: $color-white;
     background-color: $color-green;
     border: none;
     border-radius: 5px;
-    width: max-content;
-    color: $color-white;
+    cursor: pointer;
 }

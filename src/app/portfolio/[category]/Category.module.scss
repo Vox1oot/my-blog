@@ -1,0 +1,15 @@
+@import '/src/styles/variables';
+
+.categoryTitle {
+    color: $color-green;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.reverse {
+    &:nth-child(odd) {
+        direction: rtl;
+    }
+}
