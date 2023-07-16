@@ -9,17 +9,18 @@ interface IPost {
   description: string;
   image: string;
   className?: string;
+  isButton: boolean;
 }
 
-const Post = ({ title, description, image, className }: IPost) => (
+const Post = ({ title, description, image, className, isButton }: IPost) => (
   <div className={clsx(styles.item, className)}>
+    <div className={styles.imgContainer}>
+      <Image className={styles.img} fill src={image} alt="image" />
+    </div>
     <div className={styles.content}>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{description}</p>
-      <Button url="#">See More</Button>
-    </div>
-    <div className={styles.imgContainer}>
-      <Image className={styles.img} fill src={image} alt="image" />
+      {isButton && <Button url="#">See More</Button>}
     </div>
   </div>
 );

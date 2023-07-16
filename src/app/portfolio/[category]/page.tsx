@@ -20,6 +20,7 @@ const Category = ({ params }: ICategory) => {
             nobis dolores."
         image="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         className={styles.reverse}
+        isButton
       />
       <Post
         title="Test"
@@ -29,6 +30,7 @@ const Category = ({ params }: ICategory) => {
             nobis dolores."
         image="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         className={styles.reverse}
+        isButton
       />
     </div>
   );
