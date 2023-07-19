@@ -1,0 +1,35 @@
+@import '/src/styles/variables';
+
+.container {
+    position: relative;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: space-between;
+    width: 42px;
+    height: 24px;
+    padding: 2px;
+    border: 1.5px solid $color-green;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 14px;
+}
+
+.ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: $color-green;
+    border-radius: 50%;
+}
+
+.dark {
+    right: 2px
+}
+
+.light {
+    left: 2px;
+}

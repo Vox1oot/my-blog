@@ -25,3 +25,17 @@ a {
     margin: 0 auto;
     padding: 0 60px;
 }
+
+.theme {
+    transition: 1s all ease;;
+}
+
+.light {
+    color: #111;
+    background-color: #fff;
+}
+
+.dark {
+    color: #fff;
+    background-color: #111;
+}

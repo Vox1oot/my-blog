@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from './Nav.module.scss';
+import Toggle from '../Toggle';
 
 const links = [
   {
@@ -39,14 +40,21 @@ const links = [
 
 const Nav = () => (
   <div className={styles.container}>
-    <Link href="/" className={styles.logo}>Morrza</Link>
+    <Link href="/" className={styles.logo}>
+      Morrza
+    </Link>
     <div className={styles.links}>
+      <Toggle />
       {links.map((link) => (
         <Link key={link.id} href={link.url} className={styles.link}>
           {link.title}
         </Link>
       ))}
-      <button type="button" onClick={() => console.log('log out')} className={styles.logout}>
+      <button
+        type="button"
+        onClick={() => console.log('log out')}
+        className={styles.logout}
+      >
         Log Out
       </button>
     </div>
